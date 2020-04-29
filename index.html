@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    body {
+      width: 90%;
+      margin: 0 auto;
+      margin-top: 1rem;
+    }
+
+    #text {
+      width: 100%;
+      height: 50vh;
+    }
+  </style>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <textarea id="text"></textarea>
+  <label for="speed">Speed</label>
+  <input type="number" name="spee" id="speed" min=".5" max="3" step=".5" value="1">
+  <button id="play-button">Play</button>
+  <button id="pause-button">Pause</button>
+  <button id="stop-button">Stop</button>
+</body>
+</html>
