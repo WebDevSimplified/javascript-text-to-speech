@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 1rem;
+  background-color: #558889;
+}
+
+#text {
+  width: 100%;
+  height: 50vh;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 1em;
+  padding: 1.6em;
+  background-color: rgb(229, 238, 217);
+}
+#speed {
+  background-color: rgb(195, 243, 245);
+}
+#play-button {
+  padding: 8px 13px;
+  color: black;
+  background-color: rgb(218, 205, 111);
+}
+
+#play-button:hover {
+  background-color: rgb(209, 195, 88);
+  border: 2px dotted black;
+}
+
+#pause-button {
+  padding: 8px 13px;
+  color: black;
+  background-color: rgb(218, 205, 111);
+}
+
+#pause-button:hover {
+  background-color: rgb(209, 195, 88);
+  border: 2px dotted black;
+}
+
+#stop-button {
+  padding: 8px 13px;
+  color: black;
+  background-color: rgb(218, 205, 111);
+}
+
+#stop-button:hover {
+  background-color: rgb(209, 195, 88);
+  border: 2px dotted black;
+}
