@@ -4,9 +4,12 @@ const stopButton = document.getElementById('stop-button')
 const textInput = document.getElementById('text')
 const speedInput = document.getElementById('speed')
 let currentCharacter
+let paused = false
+
 
 playButton.addEventListener('click', () => {
-  playText(textInput.value)
+  if (!paused) return playText(textInput.value)
+  if (paused) {paused = false;return speechSynthesis.resume()}
 })
 pauseButton.addEventListener('click', pauseText)
 stopButton.addEventListener('click', stopText)
@@ -35,7 +38,7 @@ function playText(text) {
 }
 
 function pauseText() {
-  if (speechSynthesis.speaking) speechSynthesis.pause()
+  if (speechSynthesis.speaking) {speechSynthesis.pause();paused = true;}
 }
 
 function stopText() {
