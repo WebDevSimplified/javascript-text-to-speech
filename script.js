@@ -18,7 +18,7 @@ utterance.addEventListener("end", () => textInput.disabled = false)
 utterance.addEventListener("boundary", e => currentCharacter = e.charIndex)
 
 function playText(text) {
-  if (speechSynthesis.paused/* && speechSynthesis.speaking*/) {
+  if (speechSynthesis.paused && speechSynthesis.speaking) {
     return speechSynthesis.resume()
   }
   if (speechSynthesis.speaking) return
